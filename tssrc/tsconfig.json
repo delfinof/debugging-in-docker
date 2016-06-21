@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "sourceMap": true,
+        "target": "es6",
+        "outDir": ".",
+        "inlineSourceMap": true,
+        "inlineSources": true
+    },
+    "filesGlob": [
+        "**/*.ts"
+    ],
+    "files": [
+        "index.ts"
+    ]
+}
