@@ -1,0 +1,14 @@
+#/bin/bash
+
+# http://stackoverflow.com/posts/246128/revisions
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; 
+do 
+    # resolve $SOURCE until the file is no longer a symlink 
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )" 
+    SOURCE="$(readlink "$SOURCE")" 
+    [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located one
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+docker run -it --workdir=/mnt -v $DIR:/mnt -e PROXY_PORT=8181 -p 8181:8181 -p 5858:5858 mhart/alpine-node:4.4.5 node $@

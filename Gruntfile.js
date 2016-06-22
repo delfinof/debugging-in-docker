@@ -146,5 +146,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
 
-    grunt.registerTask("default", ["clean","ts:dev", "babel:dev", "sorcery:dev"]);
+    //fd: requires you define outDir accordingly in the tsconfig.json
+    // grunt.registerTask("multiplesteps", ["clean","ts:dev", "babel:dev", "sorcery:dev"]);
+
+    grunt.registerTask("default", ["ts:dev" ]);
+
 };

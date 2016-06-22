@@ -5,10 +5,10 @@ import * as fs from "fs";
 if( true)
 {
     if (true)
-        console.log("pppp");
+        console.log("test1");
 }
 
-console.log("puppa");
+console.log("test2");
 
 
-console.log("pappa");
+console.log("test3");
