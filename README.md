@@ -1,6 +1,6 @@
 
-This repos helps checking if there are any difference when
-debugging remote typescript vs local typescript code.
+This repos helps checking if there are any differences when
+debugging typescript remotely vs locally.
 
 Use in the following way for checking if local debugging works:
 - npm install
