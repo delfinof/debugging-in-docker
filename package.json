@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "localdebug": "grunt && node --debug --debug-brk tssrc",
-    "dockerdebug": "grunt && dockernode --debug --debug-brk tssrc"
+    "dockerdebug": "grunt && dockernode --debug --debug-brk tssrc",
+    "dockerdebug-mac": "grunt && ./dockernode --debug --debug-brk tssrc"
   },
   "author": "",
   "license": "ISC",
