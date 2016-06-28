@@ -1,9 +1,13 @@
 {
     "compilerOptions": {
-        "module": "es2015",
         "target": "es6",
-        "outDir": ".",
-        "inlineSourceMap": true,
+        "module": "commonjs",
+        "removeComments": false,
+        "sourceMap": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "allowUnreachableCode": true,
+        "outDir": "../obj/tsout",
         "inlineSources": true
     },
     "filesGlob": [
